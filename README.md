@@ -1,12 +1,8 @@
-# _{Application name here}_
+# _Currency-Exchanger_
 
-#### By _**{List of contributors}**_
+#### By _Brit Wallace_
 
-#### _{Brief description of application}_
-
-## Github Pages Link
-
-[TITLE HERE Github Pages](https://patrick-dolan.github.io/APPLICATIONNAMEHERE/)
+#### _This app will show the price for currencies and make exchanges based on exchange rates._
 
 ## Technologies Used
 
@@ -21,11 +17,12 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone repository.
+* _Run "npm install." in your terminal of choice.
+* _Followed by "run npm build."
+* _Run "npm run start to view in browser."
+* _[Find a free API here at this link](https://app.exchangerate-api.com/dashboard/confirmed)
+* _ Save your API in a ".env file" for safe keeps.  Stands for Environmental something.
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
@@ -34,13 +31,8 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * _Any known issues_
 * _should go here_
 
-## Contact Me
-
-_Let me know if you run into any issues or have questions, ideas or concerns:_
-_[Author Email Here]_
-
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Feel free to reach out with any questions, comments, or concerns. Email me at britwallace888@gmail.com_
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) _January/14/2022_ _Brit Wallace_
