@@ -18,13 +18,18 @@ _{This is a detailed description of your application. Give as much detail as nee
 ## Setup/Installation Requirements
 
 * _Clone repository.
-* _Run "npm install." in your terminal of choice.
+* _Open code in your favorite text editor. I use VS Code.
+* _Run "npm install." in your terminal.
 * _Followed by "run npm build."
 * _Run "npm run start to view in browser."
 * _[Find a free API here at this link](https://app.exchangerate-api.com/dashboard/confirmed)
-* _ Save your API in a ".env file" for safe keeps.  Stands for Environmental something.
+* _Save your API in a ".env file" for safe keeps. Then add this to your .gitignore file.
+* _Make sure you test your API calls in Postman before adding them to your code.
+* _Check documentation on your API key to see endpoints and more useful information about your API.
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+
+
+_A Epicodus school project.  We created a currency exchange application.  A user should be able to type in an amount in U.S. dollars and then choose which currency it should be converted to (such as francs, marks, rupees, and so on). This will determine the most recent exchange rate. If the query response doesn't include that particular currency, the application should return a notification that states the currency in question doesn't exist. _
 
 ## Known Bugs
 
