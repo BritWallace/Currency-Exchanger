@@ -1,3 +1,21 @@
-body {
-  background-color: rgb(134, 193, 134)
+ body {
+  background-color: rgb(134, 193, 134) 
+  /* background-image: url('images/many_currencies.jpeg'); */
+  }
+
+img {
+  width: 100%;
+  height: auto;
+  padding: 20px 30px 30px ;
 }
+
+/* div {
+  width: 100%;
+  height: 400px;
+  background-image: url('images/many_currencies.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid red;
+} */
+
+/* background-image;url('https://www.fool.com/investing/general/2015/12/06/fiat-currency-what-it-is-and-why-its-better-than-a.aspx'); */

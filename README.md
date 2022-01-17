@@ -31,8 +31,8 @@ _This is an Epicodus school project.  We created a currency exchange application
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Not working at this time._
+
 
 ## License
 
