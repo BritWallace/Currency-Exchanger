@@ -10,6 +10,7 @@
 * _CSS & Bootstrap_
 * _Javascript & jQuery_
 * _NPM & Webpack_
+* _Postman_
 
 ## Description
 

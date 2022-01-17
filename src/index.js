@@ -6,15 +6,53 @@ import CryptoService from './crypto-service.js';
 
 function clearFields() {
   $('#text').val("");
+}
 
-}function getElements(response) {
-  if (response.main) {
-    $('.showRate').text(`The rate in ${response.name} is ${response.rate}%`);
-    $('.showCurrency').text(`The exchange in ${response.currency} $.`);
+function dropDown() {
+  const array = ["AED", "AFN",  "ALL", "AMD", "ANG"];
+  array.forEach(function(currency) {
+    return (`<option>${currency}</option>`); 
+  }) 
+}
+
+  
+function getElements(response) {
+  if (response) {
+    for (const [currency, dollars] of Object.entries(response.conversionRates)) {
+    
+      console.log(currency);
+      // $('.showConversionRates').append(`You have ${(currency).toFixed(2)} in ${dollars}` + (" <br>"));
+    }
   } else {
-    $('.showErrors').text(`There was an error or doesn't exist: ${response.message}`);
+    $('.showErrors').text(`There was an error or currency doesn't exist: ${response.message}`);
   }
 }
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+    clearFields();
+    $(`foreign-currency`).html(dropDown());
+    CryptoService.getCrypto()
+      .then(function(response) {
+        getElements(response);
+      console.log(response.conversionRates);
+      });
+  });
+});
+
+
+
+// $(`foreign-currency`).append(`<option>${currency}</option>`)
+// function getElements(response) {
+  //   if (response.main) {
+  //     $('.showConversionRates').text(`The rate in ${response.conversionRates} is ${response.conversionRates}%`);
+  //     $('.showCurrency').text(`The exchange in ${response.currency} $.`);
+  //     console.log(response);
+  //   } else {
+  //     $('.showErrors').text(`There was an error or currency doesn't exist: ${response.message}`);
+  //   }
+  // }
 
 
 // function getElements(response, dollars) {
@@ -24,19 +62,6 @@ function clearFields() {
 //     console.log(response);
 //     });
 //   } else {
-//     $('.showErrors').text(`There was an error: ${response.message}`);
+//     $('.showErrors').text(`There was an error or currency doesn't exist: ${response.message}`);
 //   }
 // }
-
-$(document).ready(function() {
-  $("form").submit(function(event) {
-    event.preventDefault();
-    const currencyInput = parseFloat($("input#text").val());
-    clearFields();
-    CryptoService.getCrypto()
-      .then(function(response) {
-        getElements(response, currencyInput);
-    
-      });
-  });
-});
