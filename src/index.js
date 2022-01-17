@@ -10,8 +10,8 @@ function clearFields() {
 
 
 function getElements(response) {
-  if (response.main) {
-    $('.showRate').text(`The rate in ${response.name} is ${response.rate}%`);
+  if (response) {
+    $('.showRate').text(`The rate in ${response} is ${response.rate}%`);
     $('.showCurrency').text(`The exchange in ${response.currency} $.`);
   } else {
     $('.showErrors').text(`There was an error or doesn't exist: ${response.message}`);
