@@ -4,10 +4,74 @@
   }
 
 img {
-  width: 100%;
+  /* width: 100%;
   height: auto;
-  padding: 20px 30px 30px ;
+  padding: 20px 50px 20px ;
+  border-radius: 50px; */
+  border-radius: 100px 50px 30px 5px;
+  background: #73AD21;
+  padding: 20px;
+  width: 1000px;
+  height: 550px;
+
 }
+
+/* .content-box {
+  box-sizing: content-box;
+  Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+  Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+  Content box width: 160px
+  Content box height: 80px
+} */
+
+
+@keyframes example {
+  from {background-color: rgb(167, 151, 167);}
+  to {background-color: rgb(56, 166, 196);}
+  
+}
+
+body {
+  width: 600px;
+  height: 100px;
+  background-color: rgb(147, 220, 177);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  border: 25px solid green;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 2vw;
+  
+}
+form {
+  margin: 5px auto;
+  width: 300%;
+  border: 25px solid green;
+  padding: 10px
+}
+
+label {
+  font-family: 'Bowlby One SC', cursive;
+}
+
+
+
+/* .container {
+  box-sizing: content-box;
+  Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+  Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+  Content box width: 160px
+  Content box height: 80px
+
+} */
+
+
 
 /* div {
   width: 100%;
