@@ -10,15 +10,14 @@ function clearFields() {
 }
 
 
-function getElements(response, dollars) {
-  if (response.dollars === undefined) {
-    $(`.showRate`).text(`No can do. Try another currency.`);
-    $(`.showCurrency`).text(`No can do. Try another currency.`);
+function getElements(response, dollars, doesNotMatter) {
+  if (response.conversionRates === undefined || dollars === isNaN) {
+    $(`.response`).text(`No can do. Try another currency.`);
   if (response) {
-    $('.showRate').text(`The rate in ${(response.conversionRate * dollars).toFixed(2)} is ${response.dollars}`);
-    $('.showExchange').text(`The exchange in ${(response.currency * dollars).toFixed(2)} ${response.dollars}`);
+    console.log(response.conversion_rates.doesNotMatter );
+    $('.response').text(`The exchange in ${doesNotMatter} is ${(response.conversion_rates[doesNotMatter] * dollars).toFixed(2)} USA dollars`);
   } else {
-    $('.showErrors').text(`There was an error.: ${response.message}`);
+    $('.response').text(`There was an error.: ${response.message}`);
   }
 }
 }
@@ -33,14 +32,14 @@ function getElements(response, dollars) {
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
+    const currencyInput = parseFloat($("input#text").val());
+    const currencyType = $('#foreign-currency').val();
     clearFields();
-    $(`foreign-currency`).html;
-    // const currencyInput = parseFloat($("input#text").val());
+    console.log(currencyInput);
     CryptoService.getCrypto()
       .then(function(response) {
-        getElements(response);
-        // makeApiCall(rates);
-      });
+        getElements(response, currencyInput, currencyType);
+    });
   });
 });
 
@@ -92,3 +91,6 @@ $(document).ready(function() {
 //     $('.showErrors').text(`There was an error or currency doesn't exist: ${response.message}`);
 //   }
 // }
+
+
+// $('.response').text(`The rate in ${(response. * dollars).toFixed(2)} is ${response.dollars}`);
