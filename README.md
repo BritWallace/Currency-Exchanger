@@ -22,16 +22,17 @@ _This is an Epicodus school project.  We created a currency exchange application
 * Open code in your favorite text editor. I use VS Code.
 * Run "npm install." in your terminal.
 * Followed by "run npm build."
-* Run "npm run start to view in browser."
 * [Find a free API here at this link](https://app.exchangerate-api.com/dashboard/confirmed)
 * Save your API in a ".env file" for safe keeps. Then add this to your .gitignore file.
+* Add "API_KEY=Your key here" to the .env file. 
 * Make sure you test your API calls in Postman before adding them to your code.
 * Check documentation on your API key to see endpoints and more useful information about your API.
+* Run "npm run start to view in browser."
 
 
 ## Known Bugs
 
-* _Not connecting to API correctly._
+* _The wanted error message is buggy._
 
 
 ## License
