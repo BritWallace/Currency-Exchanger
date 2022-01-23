@@ -14,7 +14,7 @@
 
 ## Description
 
-_This is an Epicodus school project.  We created a currency exchange application.  A user should be able to type in an amount in U.S. dollars and then choose which currency it should be converted to (such as francs, marks, rupees, and so on). This will determine the most recent exchange rate. If the query response doesn't include that particular currency, the application should return a notification that states the currency in question doesn't exist._
+_This is an Epicodus school project.  We created a currency exchange application.  A user should be able to type in an amount in U.S. dollars and then choose which currency it should be converted to (such as francs, marks, rupees, and so on). This will determine the most recent exchange rate. If the query response doesn't include that particular currency, the application should return a notification that states the currency in question is not available._
 
 ## Setup/Installation Requirements
 
@@ -27,12 +27,12 @@ _This is an Epicodus school project.  We created a currency exchange application
 * Add "API_KEY=Your key here" to the .env file. 
 * Make sure you test your API calls in Postman before adding them to your code.
 * Check documentation on your API key to see endpoints and more useful information about your API.
-* Run "npm run start to view in browser."
+* Run "npm run start" to view in browser.
 
 
 ## Known Bugs
 
-* _The wanted error message is buggy._
+* _No known bugs._
 
 
 ## License

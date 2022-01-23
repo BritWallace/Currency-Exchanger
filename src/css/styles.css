@@ -1,27 +1,20 @@
- body {
+body {
   background-color: rgb(134, 193, 134) 
   /* background-image: url('images/many_currencies.jpeg'); */
   }
 
 img {
-  /* width: 100%;
-  height: auto;
-  padding: 20px 50px 20px ;
-  border-radius: 50px; */
-  border-radius: 100px 50px 30px 5px;
+  text-align: center;
+  border-radius: 100px 20px 30px 5px;
   background: #73AD21;
   padding: 20px;
   width: 1000px;
   height: 550px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 75px;
 }
 
-/* .content-box {
-  box-sizing: content-box;
-  Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
-  Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
-  Content box width: 160px
-  Content box height: 80px
-} */
 
 
 @keyframes example {
@@ -46,39 +39,19 @@ h1 {
   text-align: center;
   font-family: 'Bowlby One SC', cursive;
   font-size: 2vw;
-  
+  margin-left: 75px;
 }
 form {
-  margin: 5px auto;
+  margin-left: 75px;
   width: 100%;
   border: 25px solid green;
   padding: 10px
+  
 }
 
 label {
   font-family: 'Bowlby One SC', cursive;
+  margin-left: 75px;
 }
 
 
-
-/* .container {
-  box-sizing: content-box;
-  Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
-  Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
-  Content box width: 160px
-  Content box height: 80px
-
-} */
-
-
-
-/* div {
-  width: 100%;
-  height: 400px;
-  background-image: url('images/many_currencies.jpeg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: 1px solid red;
-} */
-
-/* background-image;url('https://www.fool.com/investing/general/2015/12/06/fiat-currency-what-it-is-and-why-its-better-than-a.aspx'); */

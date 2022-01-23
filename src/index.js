@@ -10,16 +10,13 @@ function clearFields() {
 }
 
 
-function getElements(response, dollars, doesNotMatter) {
-  console.log(response);
-  console.log(doesNotMatter);
-  if (isNaN(response.conversion_rates[doesNotMatter] * dollars)) {
+function getElements(response, dollars, currencyCode) {
+  if (isNaN(response.conversion_rates[currencyCode] * dollars)) {
     $(`.response`).text(`No can do. Try another currency.`);
   }
   if (response) {
-    console.log(response.conversion_rates.doesNotMatter );
-    $('.response').text(`The exchange in ${doesNotMatter} is ${(response.conversion_rates[doesNotMatter] * dollars).toFixed(2)}`);
-    console.log((response.conversion_rates[doesNotMatter] * dollars));
+  if (!isNaN(response.conversion_rates[currencyCode] * dollars)) 
+    $('.response').text(`The exchange in ${currencyCode} is ${(response.conversion_rates[currencyCode] * dollars).toFixed(2)}`);
   } else {
     $('.response').text(`There was an error.: ${response.message}`);
   }
